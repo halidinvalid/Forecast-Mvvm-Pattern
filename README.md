@@ -6,7 +6,7 @@ Preparing the MVVM forecast Android app for getting the user location.
 
 - Clean architecture using kotlin
 - Presentation layer using MVVM
-- Navigation Component
+- Navigation Architecture Component
 - Using Kodein for dependency resolution
 - Repository Pattern
 - Retrofit2
