@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/weather_navigation">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weather_navigation"
+    app:startDestination="@id/currentWeatherFragment">
+
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="com.halidinvalid.forecast.ui.weather.current.CurrentWeatherFragment"
+        android:label="current_weather_fragment"
+        tools:layout="@layout/current_weather_fragment" />
+
+    <fragment
+        android:id="@+id/futureListFragment"
+        android:name="com.halidinvalid.forecast.ui.weather.future.list.FutureListWeatherFragment"
+        android:label="future_list_weather_fragment"
+        tools:layout="@layout/future_list_weather_fragment">
+        <action
+            android:id="@+id/actionDetail"
+            app:destination="@id/futureDetailWeatherFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/futureDetailWeatherFragment"
+        android:name="com.halidinvalid.forecast.ui.weather.future.detail.FutureDetailWeatherFragment"
+        android:label="future_detail_weather_fragment"
+        tools:layout="@layout/future_detail_weather_fragment">
+
+        <argument
+            android:name="dateString"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.halidinvalid.forecast.ui.settings.SettingsFragment"
+        android:label="settings_fragment" />
 
 </navigation>
