@@ -6,7 +6,7 @@
         android:title="@string/today" />
 
     <item
-        android:id="@+id/futureWeatherFragment"
+        android:id="@+id/futureListWeatherFragment"
         android:icon="@drawable/ic_future"
         android:title="@string/seven_days" />
 

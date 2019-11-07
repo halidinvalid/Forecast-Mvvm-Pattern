@@ -12,15 +12,13 @@
         tools:layout="@layout/current_weather_fragment" />
 
     <fragment
-        android:id="@+id/futureListFragment"
+        android:id="@+id/futureListWeatherFragment"
         android:name="com.halidinvalid.forecast.ui.weather.future.list.FutureListWeatherFragment"
         android:label="future_list_weather_fragment"
         tools:layout="@layout/future_list_weather_fragment">
         <action
             android:id="@+id/actionDetail"
-            app:destination="@id/futureDetailWeatherFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            app:destination="@id/futureDetailWeatherFragment" />
     </fragment>
 
     <fragment
@@ -35,7 +33,7 @@
     </fragment>
 
     <fragment
-        android:id="@+id/settingFragment"
+        android:id="@+id/settingsFragment"
         android:name="com.halidinvalid.forecast.ui.settings.SettingsFragment"
         android:label="settings_fragment" />
 
