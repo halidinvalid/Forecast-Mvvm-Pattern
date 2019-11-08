@@ -1,4 +1,4 @@
-package com.halidinvalid.forecast.data.response
+package com.halidinvalid.forecast.data.db.entity
 
 
 import com.google.gson.annotations.SerializedName

@@ -1,4 +1,4 @@
-package com.halidinvalid.forecast.data.response
+package com.halidinvalid.forecast.data.db.entity
 
 
 data class Request(
